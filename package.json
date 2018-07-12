@@ -1,0 +1,25 @@
+{
+  "name": "rabbitmq-broker",
+  "version": "1.0.0",
+  "description": "RabbitMQ broker",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wenpengfei/rabbitmq-broker.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wenpengfei/rabbitmq-broker/issues"
+  },
+  "homepage": "https://github.com/wenpengfei/rabbitmq-broker#readme",
+  "dependencies": {
+    "amqplib": "^0.5.2"
+  }
+}
