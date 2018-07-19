@@ -1,13 +1,10 @@
 const amqp = require('amqplib');
 
 class WorkQueue {
-    constructor(url) {
-        this._url = url || 'amqp://localhost'
-    }
 
-    async connect() {
+    async connect(url = 'amqp://localhost') {
         try {
-            this._conn = await amqp.connect(this._url)
+            this._conn = await amqp.connect(url)
             this._channel = await this._conn.createChannel()
         } catch (error) {
             throw (`connect amqp error: ${error}`)
